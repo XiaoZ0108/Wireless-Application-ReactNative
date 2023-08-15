@@ -6,9 +6,6 @@ class Button extends Component {
   constructor() {
     super();
   }
-  pressbtt() {
-    console.log('1212');
-  }
 
   render() {
     return (
