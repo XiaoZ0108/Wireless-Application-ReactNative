@@ -1,9 +1,9 @@
-const {Component} = require('react');
-const {TextInput, StyleSheet, View} = require('react-native');
+import {Component} from 'react';
+import {TextInput, StyleSheet, View} from 'react-native';
 import Button from './Button';
 class SearchBar extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       userInput: '',
     };

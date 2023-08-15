@@ -1,6 +1,6 @@
 import {StyleSheet, View, Text} from 'react-native';
 
-const {Component} = require('react');
+import {Component} from 'react';
 
 class Card extends Component {
   constructor() {
