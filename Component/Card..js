@@ -3,8 +3,8 @@ import {StyleSheet, View, Text} from 'react-native';
 import {Component} from 'react';
 
 class Card extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {};
   }
   render() {

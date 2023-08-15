@@ -1,6 +1,7 @@
 import {Component} from 'react';
 import {TextInput, StyleSheet, View} from 'react-native';
 import Button from './Button';
+import Icon from 'react-native-vector-icons/FontAwesome';
 class SearchBar extends Component {
   constructor(props) {
     super(props);
@@ -27,7 +28,9 @@ class SearchBar extends Component {
           onChangeText={this.handleInputChange.bind(this)}
           value={this.state.userInput}
         />
-        <Button click={this.clickHandle.bind(this)}>Search</Button>
+        <Button click={this.clickHandle.bind(this)}>
+          <Icon name="search" color={'black'} size={18} />
+        </Button>
       </View>
     );
   }

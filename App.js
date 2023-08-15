@@ -2,7 +2,6 @@ import {Component} from 'react';
 import {StyleSheet, View} from 'react-native';
 import Card from './Component/Card.';
 import SearchBar from './Component/SearchBar';
-
 class App extends Component {
   constructor() {
     super();
