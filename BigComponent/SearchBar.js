@@ -2,6 +2,7 @@ import {Component} from 'react';
 import {TextInput, StyleSheet, View} from 'react-native';
 import Button from '../Component/Button';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import Card from '../Component/Card.';
 class SearchBar extends Component {
   constructor(props) {
     super(props);

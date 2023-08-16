@@ -2,6 +2,7 @@ import {Component} from 'react';
 import {StyleSheet, View} from 'react-native';
 import SearchBar from '../BigComponent/SearchBar';
 import ItemBox from '../BigComponent/ItemBox';
+import Card from '../Component/Card.';
 class MarketPlace extends Component {
   constructor(props) {
     super(props);
@@ -13,6 +14,7 @@ class MarketPlace extends Component {
         <ItemBox />
         <ItemBox />
         <ItemBox />
+        <Card />
       </View>
     );
   }
@@ -26,8 +28,8 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#ad4a4a',
+    justifyContent: 'space-around',
+
     padding: 20,
   },
 });
