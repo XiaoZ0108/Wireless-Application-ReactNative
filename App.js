@@ -1,21 +1,12 @@
 import {Component} from 'react';
-import {StyleSheet, View} from 'react-native';
-import Card from './Component/Card.';
-import SearchBar from './Component/SearchBar';
+import {StyleSheet} from 'react-native';
+import MarketPlace from './Screen/MarketPlace';
 class App extends Component {
   constructor() {
     super();
   }
   render() {
-    return (
-      <View style={styles.container}>
-        <SearchBar />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </View>
-    );
+    return <MarketPlace />;
   }
 }
 export default App;
