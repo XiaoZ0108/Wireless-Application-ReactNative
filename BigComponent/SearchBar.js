@@ -11,13 +11,14 @@ class SearchBar extends Component {
     };
   }
   handleInputChange(enteredtext) {
-    this.setState(prevState => {
-      return {userInput: enteredtext};
+    this.setState(prev => {
+      return {...prev, userInput: enteredtext};
     });
+    this.props.search(enteredtext);
   }
+
   clickHandle() {
-    console.log(this.state.userInput);
-    this.setState({userInput: ''});
+    this.props.search(this.state.userInput);
   }
 
   render() {

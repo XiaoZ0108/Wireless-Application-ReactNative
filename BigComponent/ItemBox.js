@@ -18,11 +18,11 @@ class ItemBox extends Component {
           onPress={this.pressHandle.bind(this)}
           style={styles.outerContainer}
           android_ripple={{color: '#f5f5f5'}}>
-          <Image style={styles.img} source={require('../Asset/handsome.png')} />
+          <Image style={styles.img} source={this.props.path} />
           <View style={styles.itemDesc}>
             <View style={styles.titlebox}>
               <Text style={styles.title} ellipsizeMode="tail" numberOfLines={2}>
-                {this.props.title}GayBoy
+                {this.props.title}
               </Text>
             </View>
             <View style={styles.pricebox}>
@@ -30,8 +30,8 @@ class ItemBox extends Component {
                 RM{this.props.price ? this.props.price : 0}
               </Text>
               <Text style={styles.rating}>
-                1.3{this.props.rating}
-                <Icon name={'star'} style={styles.star} />
+                {this.props.rating}
+                <Icon name={'star'} style={styles.star} color={'#fcfc4b'} />
               </Text>
             </View>
           </View>
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
     flex: 2,
   },
   title: {color: 'black', fontSize: 16},
-  price: {color: 'purple', fontSize: 18},
+  price: {color: 'purple', fontSize: 20},
   titlebox: {
     flex: 2,
   },
