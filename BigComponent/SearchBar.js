@@ -41,7 +41,6 @@ export default SearchBar;
 
 const styles = StyleSheet.create({
   container: {
-    width: 350,
     height: 50,
     borderColor: 'pink',
     borderWidth: 2,

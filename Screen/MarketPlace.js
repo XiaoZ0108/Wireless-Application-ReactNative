@@ -1,20 +1,21 @@
 import {Component} from 'react';
-import {StyleSheet, View} from 'react-native';
+import {ScrollView, StyleSheet, View} from 'react-native';
 import SearchBar from '../BigComponent/SearchBar';
 import ItemBox from '../BigComponent/ItemBox';
 import Card from '../Component/Card.';
 
 const inidata = [
   {
-    title: 'gayboyadwwwwwwwwwwwwwwwwwwwwwwwww',
+    title: 'Ice1',
     price: '50',
     rating: 5,
-    path: require('../Asset/p1.png'),
+    //path: require('../Asset/p1.png'),
+    path: require('../Asset/ice1.png'),
   },
-  {title: 'gayman', price: '5', rating: 3, path: require('../Asset/p2.png')},
-  {title: 'gay', price: '30', rating: 2, path: require('../Asset/p3.png')},
+  {title: 'Ice2', price: '5', rating: 3, path: require('../Asset/ice2.png')},
+  {title: 'Ice3', price: '30', rating: 2, path: require('../Asset/ice3.png')},
   {
-    title: 'pandaman',
+    title: 'Pandaman',
     price: '666',
     rating: 5,
     path: require('../Asset/p4.png'),
@@ -55,8 +56,12 @@ class MarketPlace extends Component {
     return (
       <View style={styles.container}>
         <SearchBar search={this.searchItem.bind(this)} />
-        {display}
-        <Card />
+        <ScrollView>
+          <View style={styles.itemArea}>
+            {display}
+            <Card />
+          </View>
+        </ScrollView>
       </View>
     );
   }
@@ -67,11 +72,11 @@ export default MarketPlace;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    padding: 20,
+  },
+  itemArea: {
     flexWrap: 'wrap',
     flexDirection: 'row',
-    alignItems: 'center',
     justifyContent: 'space-around',
-
-    padding: 20,
   },
 });
